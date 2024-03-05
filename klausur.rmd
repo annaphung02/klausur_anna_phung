@@ -1,0 +1,47 @@
+---
+title: "Klausur"
+author: "Anna Phung"
+date: "2024-03-04"
+output: html_document
+---
+```{r echo=FALSE}
+
+data(trees)
+summary(trees)
+
+```
+
+Im Folgenden werden die einzelnen Variablen des Datensatzes "trees", mithilfe der Markdown-Syntax Tabelle erklärt:
+
+| Variablen des Datensatzes | Erläuterung |
+|-----|-----------------------------------|
+| Girth | Durchmesser des Baumstammes von schwarzen Kirschbäumen |
+| Height | Höhe der schwarzen Kirschbäume |
+| Volume | Volumen des Baumstammes der Kirschbäume |
+
+
+Hier erfolgt ein sichtbarer R-Code-Block, der die Ausgabe der ersten sechs Zeilen des Datensatzes "trees" ausgeführt:
+  
+```{r echo=TRUE}
+data("trees")
+head(trees)
+```
+
+Die wichtigsten Aspekte des Datensatzes "trees" wird nun im folgenden Paragraph erläutert (Girth = Zoll, Height/Volume = Fuß):
+
+In der Kategorie des Durchmessers liegt das Minimummaß bei 8.30 Zoll und das Maximum bei 20.60 Zoll. Der durchschnittliche Durchmesser liegt bei 13.25 Zoll und der Median bei 12.90 Zoll.
+
+Der Mindestwert im Bezug zur Höhe in Fuß beträgt 63. Dabei liegt das Maximum bei 87. Im Durchschnitt als auch der Median liegt die Höhe bei 76 Fuß. 
+
+Letztlich zum Volumen entspricht der Mindestwert 10.20 Kubikfuß und der Maximalwert bei 77 Kubikfuß. Durschnittlich beträgt das Volumen ein Maß von 30.17 Kubikfuß und ein Median von 24.20 Kubikfuß.
+
+Zur Überprüfung des Datentyps jeder Spalte des Datensatzen wird nun der class(...)-Befehl angewendet:
+
+class(trees$Girth)
+class(trees$Height)
+class(trees$Volume)
+
+```{r}
+
+```
+
